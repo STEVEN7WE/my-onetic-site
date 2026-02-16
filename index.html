@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>For My Love ❤️</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Background clouds -->
+    <div class="cloud left-cloud">☁️</div>
+    <div class="cloud right-cloud">☁️</div>
+
+    <!-- Music with play/pause button -->
+    <audio id="bgMusic" loop>
+      <source src="audio/riptide.mp3" type="audio/mpeg" />
+    </audio>
+    <button id="musicBtn" class="music-btn">🎵 Play Music</button>
+
+    <!-- Main content -->
+    <div class="container">
+      <h1 class="fade-in">
+        To The studmuffin of my Life 💕
+        <span class="highlight">Bernnnnnnnny</span>
+      </h1>
+      <p class="fade-in delay1">You are my today and all of my tomorrows.</p>
+
+      <div class="buttons fade-in delay2">
+        <a href="love-letter.html">Read My Letter 💌</a>
+        <a href="gallery.html">Memories 📸</a>
+      </div>
+    </div>
+
+    <!-- Hearts animation -->
+    <div class="hearts"></div>
+
+    <!-- Popup -->
+    <div id="lovePopup" class="popup">
+      <div class="popup-content">
+        <span class="close-btn" onclick="closePopup()">×</span>
+        <h2>Wait… ❤️</h2>
+        <p>
+          I just wanted to remind you that you are the best thing that ever
+          happened to me. 🌹
+        </p>
+        <button onclick="specialMessage()">Click Me 💕</button>
+      </div>
+    </div>
+
+    <!-- Fireworks Canvas -->
+    <canvas id="fireworksCanvas"></canvas>
+
+    <script src="script.js"></script>
+  </body>
+</html>
